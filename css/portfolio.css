@@ -1,0 +1,206 @@
+/* Global Styles
+------------------------------------- */
+html{
+    box-sizing: border-box;
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+
+
+.job-details h3 + p {
+    font-style: italic;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+body{
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px ;
+    line-height: 1.5;
+}
+a{
+    color: #F7FFF7;
+    background: #2f3061;
+    text-decoration: none;
+    padding:8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+    background-color: rgba(47,48,97, 80%);
+}
+
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+
+h2{
+    font-size: 45px;
+}
+.content-wrap{
+   max-width: 800px;
+   width:90%;
+    margin:0 auto;
+    padding:60px 0; 
+}
+
+h1,h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin:0;
+   
+}
+
+
+/* Profile
+------------------------------------- */
+header {
+    background: #2f3061;
+    color:#F7FFF7;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    }
+
+
+
+
+
+
+/* Projects
+------------------------------------- */
+.Projects{
+    background:#F7FFF7;
+}
+
+.Project-items{
+overflow: hidden;
+border-bottom: 1px dashed grey;
+padding: 25px 0;
+}
+
+/* .Project-content{
+    margin-top:5px;
+} */
+
+.Project-items h3 {
+    margin: 0;
+}
+
+.Project-items img{
+    float:left;
+    margin-right:15px;
+
+}
+
+.Projects section:last-child {
+    border:none;
+}
+
+
+
+
+/* Work Experience
+------------------------------------- */
+.Work-Experience{
+    background: #A1C6D7;;
+}
+
+.job-item{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    column-gap: 20px;
+}
+
+
+.Work-Experience section:first-of-type{
+border-bottom: 1px dashed grey;
+}
+
+.job-details h3 {
+    margin-bottom: 0;
+}
+
+/* Education
+------------------------------------- */
+.Education{
+background: url(../Images/imageonline-co-flipped.jpg) no-repeat ;
+background-size: cover;
+background-position: top right;
+}
+
+
+
+/* Contact info
+------------------------------------- */
+footer{
+    background: #343434;
+    color:#F7FFF7;
+    text-align: center;
+}
+
+.contact-list{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content:space-evenly;
+}
+
+.contact-list a{
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Contact info
+------------------------------------- */
+
+
+@media screen and (max-width:815px) {
+    h1{
+        font-size: 80px;
+        line-height: 0.9;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    header {
+        background: #2f3061;
+        color:#F7FFF7;
+        font-family: 'Nunito', sans-serif;
+        text-align:initial;
+        }
+
+        .Project-items img{
+            float:none;
+            display: block;
+            margin: 5px auto;
+        }
+
+
+}
+
+@media screen and (max-width:345px){
+    .contact-list{
+        padding: 0;
+        list-style-type: none;
+        display: block;
+    }
+    
+    .contact-list a{
+        padding: 10px;
+        margin: 10px;;
+    }
+   
+}
